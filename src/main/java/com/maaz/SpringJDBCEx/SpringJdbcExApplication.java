@@ -19,6 +19,8 @@ public class SpringJdbcExApplication {
 		StudentService stdService = context.getBean(StudentService.class);
 		stdService.addStudent(std);
 
+		System.out.println("all data" + stdService.getStudent());
+
 	}
 
 }
